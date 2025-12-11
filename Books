@@ -1,0 +1,9 @@
+SELECT * FROM books WHERE Price < 450 AND Stock > 30
+
+UPDATE books SET Stock = 45, Price = Price - 80 WHERE Title = 'Deep Work'
+
+DELETE FROM books WHERE Title = 'Ikigai'
+
+SELECT AVG(Price), SUM(Stock) FROM books
+
+SELECT * FROM books ORDER BY Price DESC LIMIT 3
