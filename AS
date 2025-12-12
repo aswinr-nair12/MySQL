@@ -1,0 +1,11 @@
+1) SELECT Title, Box_office AS 'Earnings (in Cr)' FROM movies;
+
+2) SELECT Title AS 'Movie Title', Genre AS 'Category' FROM movies;
+
+3) SELECT * FROM movies WHERE Genre IN('Sci-Fi', 'Action') 
+
+4) SELECT 'Rating' AS 'IMDb_score' FROM movies;
+
+5) SELECT * FROM movies WHERE Release_year BETWEEN '2008' AND '2015';
+
+6) SELECT * FROM movies WHERE Rating>8.5;
