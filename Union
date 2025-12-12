@@ -1,0 +1,9 @@
+1) SELECT Title, AUTHOR FROM books1 UNION SELECT Title, AUTHOR FROM bestsellers
+
+2) SELECT * FROM books1 WHERE Price>400
+
+3) SELECT AVG(Price) FROM books1
+
+4) SELECT COUNT(Copies_sold) FROM books1
+
+5) SELECT Title AS 'Book Title', Author AS 'Written By' FROM books1
