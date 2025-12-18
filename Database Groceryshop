@@ -1,0 +1,12 @@
+1) CREATE DATABASE GroceryShop;
+
+2) USE groceryshop;
+
+3) CREATE TABLE products( Product_id INT NOT NULL, Product_name VARCHAR(20) NOT NULL, Price INT NOT NULL, PRIMARY KEY (Product_id));
+
+4) ALTER TABLE products ADD COLUMN Category VARCHAR(10) NOT NULL;
+
+5) DELETE FROM products;
+
+6) DROP DATABASE groceryshop;
+
