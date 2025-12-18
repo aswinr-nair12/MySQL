@@ -1,0 +1,13 @@
+1) CREATE DATABASE BookStoreDB;
+
+2) USE bookstoredb;
+
+3) CREATE TABLE authors1 (Author_id INT NOT NULL, Name VARCHAR(20) NOT NULL, Country VARCHAR(25) NOT NULL, PRIMARY KEY (Author_id));
+
+4) CREATE TABLE books2( Book_id INT NOT NULL, Title VARCHAR(20) NOT NULL, Price INT NOT NULL, PRIMARY KEY (Book_id));
+
+5) ALTER TABLE books2 ADD Published_year INT(10) NOT NULL;
+
+6) DELETE FROM books2;
+
+7) DROP DATABASE bookstoredb;
