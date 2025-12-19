@@ -1,0 +1,15 @@
+1) CREATE TABLE books3( Book_id INT NOT NULL, Title VARCHAR(20) NOT NULL, PRIMARY KEY (Book_id));
+
+2) INSERT INTO books3(Book_id, Title) VALUES ('1', 'The Alchemist'), ('2', 'The Power of Now'), ('3', 'Think and Grow Rich'), ('4', 'Clean Code');
+
+3) CREATE TABLE borrowers( Borrower_id INT NOT NULL, Name VARCHAR(20) NOT NULL, Book_id INT NOT NULL, PRIMARY KEY (Borrower_id));
+
+4) INSERT INTO borrowers VALUES ('101', 'Alice', '1'), ('102', 'Bob', '2'), ('103', 'Charlie', 'NULL');
+
+5) SELECT books3.book_id, books3.title, borrowers.name AS borrower_name FROM books3 LEFT JOIN borrowers ON books3.book_id = borrowers.book_id;
+
+6) SELECT borrowers.borrower_id, borrowers.name, books3.title FROM borrowers LEFT JOIN books3 ON borrowers.book_id = books3.book_id;
+
+7) SELECT books3.book_id, books3.title FROM books3 LEFT JOIN borrowers ON books3.book_id = borrowers.book_id WHERE borrowers.book_id IS NULL;
+
+8) SELECT borrowers.borrower_id, borrowers.name, books3.title FROM borrowers LEFT JOIN books3 ON borrowers.book_id = books3.book_id;
